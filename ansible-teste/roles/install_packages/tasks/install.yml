@@ -1,0 +1,16 @@
+---
+# tasks file for install_packages
+#
+- name: instalando pacotes
+  yum:
+    name: 
+    - wget
+    - tree
+    - vim
+    state: present
+    update_cache: yes
+
+- name: Criando pasta
+  file:
+    path: /opt/exemplo
+    state: directory

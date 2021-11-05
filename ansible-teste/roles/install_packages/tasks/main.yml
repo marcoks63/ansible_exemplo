@@ -1,0 +1,2 @@
+- name: Adicionando task para instalar pacotes
+  include_tasks: install.yml
